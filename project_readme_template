@@ -100,18 +100,16 @@ POSSIBLE CODE BLOCK
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-
-* Text Editor
 * Node
 * NPM
-* [Fitlit-API](https://github.com/turingschool-examples/fitlit-api)
+
 
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/williamphelps13/repo_name.git
+   git clone https://github.com/USER-REPO/repo_name.git
    ```
 2. Install NPM packages
    ```sh
