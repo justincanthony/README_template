@@ -13,23 +13,28 @@
 [![Project][turing-shield]][project-spec-url] 
 [![Issues][issues-shield]][issues-url] 
 
+*/CHANGE THESE VARIABLES TO YOUR OWN PROJECT SPECIFIC PAGE/*
+"URL-Hosting-Site" , REPO-NAME
+
+--https://github.com/justincanthony--
+--
 
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT Details -->
 
-  <h1 align="center">FitLit</h1>
+  <h1 align="center">Project Title</h1>
 
   <p align="center">
    A brief statement about the project
     <br />
-    <a href=https://github.com/williamphelps13/FitLit><strong>Explore the docs »</strong></a>
+    <a href=https://github.com/justincanthony/REPO-NAME><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://"URL-Hosting-Site">View Demo</a>
     ·
-    <a href="https://github.com/williamphelps13/FitLit/issues">Report Bug</a>
+    <a href="https://github.com/justincanthony/REPO-NAME/issues">Report Bug</a>
     ·
-    <a href="https://github.com/williamphelps13/FitLit/issues">Request Feature</a>
+    <a href="https://github.com/justincanthony/REPO-NAME/issues">Request Feature</a>
   </p>
 </p>
 
@@ -64,26 +69,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Fitlit was a data-handling based project that challenged us to fetch multiple data sets from an API and use them to display health data for a user. We were tasked with impletmenting array protoype methods and *class to class* interaction to extract and calculate useful statisitics for a user to stay aware of their fitness levels.
-
-In addition to handling and dsiplaying data, we also we required to fetch the data from an API set up on a local server and resolve the `promise` into usable data for javascript. 
-
+--INSERT PROJECT DESCRIPTION--
+--What the over all scope and learninging goal of the project is, and what set-up the challenge was framed in
 
 
-*method for displaying a user's average hours of sleep*
+
 ```
-getUserAvgHrs() {
-    return (
-      Math.round(
-        (this.userSleep.reduce((totalHrs, userEntry) => {
-          return (totalHrs += userEntry.hoursSlept);
-        }, 0) /
-          this.userSleep.length) *
-          10
-      ) / 10
-    );
-  }
+POSSIBLE CODE BLOCK
   ```
+  
 <img width="1412" alt="Screen Shot 2021-07-20 at 8 36 28 PM" src="https://user-images.githubusercontent.com/22990386/126422063-c20f11d3-aa73-4113-b7eb-6736ee82c0e4.png">
 
 
@@ -126,42 +120,27 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The application is intended to allow a user to see all of their hydreation, sleep, and activity data at any given point, as well as be able ot display past activity. It's styling intenet is driven towards viewing on a mobile device.
+
+
+<!-- Screen Size EXAMPLES -->
+
+DESCRIBE WHAT THE USAGE EXPERIENCE IS LIKE/BUILT ON
 
 tablet view                   |  mobile view
 :-------------------------:|:-------------------------:
-![recording (4)](https://user-images.githubusercontent.com/22990386/126421369-8a079d86-acd6-4031-8960-92b02f934525.gif)|![recording (5)](https://user-images.githubusercontent.com/22990386/126421376-fca9c057-657d-48a0-ae6b-e02eeb1285ca.gif)
+
+MORE USAGE
 
 
-Example: The method belonging to the `sleep class` below extracts 7 days worth of data dsiplaying that day and the prevoious 6 days inforamtion. The array needed to return an object with two properties with each property assigned to the value of an array. This method also allows for displaying weeks that may not have 7 days worth of data. The reason requiring this was to allow for dynamic inputs of data into the `chart.js` objects. We know, it needs some refactoring *[(hint, hint)](https://github.com/williamphelps13/FitLit/issues)*
-
+Example:Code
 ```
-getUserHrsByWeek(date) {
-    const target = this.userSleep.find((userEntry) => userEntry.date === date);
-    const index = this.userSleep.indexOf(target);
-    if (index < 7) {
-      let dates = this.userSleep
-        .slice(0, index + 1)
-        .map((userEntry) => userEntry.date);
-      let hoursSlept = this.userSleep
-        .slice(0, index + 1)
-        .map((userEntry) => userEntry.hoursSlept);
-      return { date: dates, hours: hoursSlept };
-    } else {
-      let dates = this.userSleep
-        .slice(index - 6, index + 1)
-        .map((userEntry) => userEntry.date);
-      let hoursSlept = this.userSleep
-        .slice(index - 6, index + 1)
-        .map((userEntry) => userEntry.hoursSlept);
-      return { date: dates, hours: hoursSlept };
-    }
-  }
+more code here!
 ```
+
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/williamphelps13/FitLit/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/justincanthony/REPO-NAME/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
@@ -176,8 +155,7 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 ## Contact
-<a class="u-email Link--primary " href="mailto:williamphelps13@gmail.com">williamphelps13@gmail.com</a>
-<br>
+
 <a class="u-email Link--primary " href="mailto:justincanthony@gmail.com">justincanthony@gmail.com</a>
 
 
